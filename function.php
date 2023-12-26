@@ -81,6 +81,7 @@ if (isset($_POST['updatebarang'])) {
     }
 }
 
+// HAPUS BARANG STOCK
 if (isset($_POST['hapusbarang'])) {
     $idbarang = $_POST['idb'];
     
@@ -88,4 +89,9 @@ if (isset($_POST['hapusbarang'])) {
     if ($delete) {
         header('location:index.php');
     }
+}
+
+// MENGUBAH DATA BARANG MASUK
+if (isset($_POST['updatebarangmasuk'])) {
+    
 }

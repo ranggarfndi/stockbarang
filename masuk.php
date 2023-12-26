@@ -71,7 +71,6 @@ require 'cek.php';
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
                                             <th>Keterangan</th>
-                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -82,6 +81,7 @@ require 'cek.php';
                                             $namabarang = $data['namabarang'];
                                             $qty = $data['qty'];
                                             $keterangan = $data['keterangan'];
+                                            $idb = $data['idbarang'];
                                         ?>
 
                                         <tr>
@@ -89,19 +89,8 @@ require 'cek.php';
                                             <td><?= $namabarang; ?></td>
                                             <td><?= $qty; ?></td>
                                             <td><?= $keterangan; ?></td>
-                                            <td>
-                                                    <button type="button" class="btn btn-warning" data-toggle="modal"
-                                                        data-target="#ubah<?=$idb;?>">
-                                                        Ubah
-                                                    </button>
-                                                    
-                                                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                        data-target="#hapus<?=$idb;?>">
-                                                        Hapus
-                                                    </button>
-                                                </td>
                                         </tr>
-
+                                        
                                         <?php 
                                         };
                                         ?>
